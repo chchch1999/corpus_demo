@@ -10,8 +10,8 @@ This repository contains four projects, each with different focuses, ranging fro
 2. **[View the Summary of the Analysis](analysis_summary/Diphthong%20Reduction%20Analysis.html)**: 
    Detailed summary of the analysis focusing on diphthong reduction in Taiwan Mandarin.
 
-3. **[View the OOP Project](oop_project/)**: 
-   This folder contains the source code for an object-oriented programming project in Python. For more details, view the [README in the Fire department folder](oop_project/Fire_department/README.md).
+3. **[View the OOP Project](oop_project/Fire_department.html)**: 
+   This folder contains the source code for an object-oriented programming project in Python.
 
 4. **[R Project on Data Science](r_project/)**: 
    A demo of data science analysis in R, including [PDF report](r_project/report.pdf).
