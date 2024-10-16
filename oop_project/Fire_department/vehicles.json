@@ -1,0 +1,23 @@
+[
+    {
+        "call_sign": "Command 1",
+        "purpose": "command",
+        "weight": 90.0,
+        "fuel_level": 90.0,
+        "_range": 20.0
+    },
+    {
+        "call_sign": "Engine 1",
+        "purpose": "engine",
+        "weight": 10,
+        "fuel_level": 100,
+        "_range": 200.0
+    },
+    {
+        "call_sign": "Ladder 1",
+        "purpose": "ladder",
+        "weight": 12,
+        "fuel_level": 120,
+        "_range": 200.0
+    }
+]
