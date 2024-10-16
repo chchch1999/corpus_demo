@@ -13,5 +13,5 @@ This repository contains four projects, each with different focuses, ranging fro
 3. **[View the OOP Project](oop_project/Fire%20department/)**: 
    This folder contains the source code for an object-oriented programming project in Python. For more details, view the [README in the Fire department folder](oop_project/Fire%20department/README.md).
 
-4. **[R Project on Data Science](r_project/demo.html)**: 
+4. **[R Project on Data Science](r_project/)**: 
    A demo of data science analysis in R, including [PDF report](r_project/report.pdf).
