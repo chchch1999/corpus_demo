@@ -1,5 +1,5 @@
-# demo my works
+# Demo my works
 There are two HTML files in this repository. 
 
-diphthong reduction
-corpus preview
+1. diphthong reduction /n
+2. corpus preview
