@@ -1,14 +1,15 @@
 # Project Demo Repository
 There are two HTML files, an OOP project, and an R project on data science in this repository. 
 
-## HTML Demo
-[View the HTML Demo](html-demo/index.html)
+## Corpus Demo
+[Preview of the Corpus](Data Analysis of the Corpus of Taiwan Mandarin Spontaneous Speech.html)
 
-This folder contains an HTML demonstration.
+## Descriptive and Statistical Analysis of Dipththong Reduction
+[View the Summary of the Analysis](Diphthong Reduction Analysis.html)
 
 ## OOP Project
-[View the OOP Project](oop-project/)
+[View the OOP Project](Fire department/)
 
 This folder contains the source code for an object-oriented programming project.
-The project is written in PYTHON, and you can find more details in the `oop-project/README.html`.
+The project is written in PYTHON, and you can find more details in the `Fire department/README.md`.
 
