@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fires Department Resource Management</title>
+</head>
+<body>
+    <h1>Fires Department Resource Management</h1>
+
+    <h2>Overview</h2>
+
+    <p>The fire package is designed to provide resource management capabilities for a fire department. It includes six modules that handle user management, vehicle management, and various resource management operations. This documentation will provide an overview of each module and how to use the interactive page to manage resources.</p>
+
+    <h2>Project Structure</h2>
+
+    <p>The project is structured as follows:</p>
+
+    <pre>
+    Fire_department/        <!-- Project root directory -->
+    ├── fire/               <!-- Package containing modules -->
+    │   ├── manager.py      <!-- Module 1: Core resource management -->
+    │   ├── test.py         <!-- Module 2: Unit tests for vehicle management -->
+    │   ├── vehicle.py      <!-- Module 3: Vehicle management -->
+    │   ├── vehicle_menu.py <!-- Module 4: Vehicle management menu -->
+    │   ├── option.py       <!-- Module 5: Menu options management -->
+    │   └── user.py         <!-- Module 6: User management -->
+    ├── manage_department.ipynb <!-- Interactive page for resource management -->
+    ├── users.json          <!-- JSON file containing registered users -->
+    └── vehicles.json       <!-- JSON file containing vehicle data -->
+    </pre>
+
+    <h2>Interactive Page - <code>manage_department.ipynb</code></h2>
+
+    <h3>Overview</h3>
+
+    <p>The interactive page <code>manage_department.ipynb</code> serves as the user interface for managing resources in the Fires Department Resource Management package. Users can run various operations, manage resources, and execute unit tests using this interactive page.</p>
+
+    <h3>Instructions</h3>
+
+    <ol>
+        <li><strong>Getting Started:</strong> Upon launching the interactive page, you'll see information about your home directory and the current working directory. This provides context about the environment.</li>
+        <li><strong>Directory Contents:</strong> The script lists the contents of the current directory, allowing you to see available files and the package <strong>fire</strong>.</li>
+        <li><strong>Resource Management:</strong> The page imports the <code>manager</code> module and runs its <code>main()</code> function. This function initializes the resource management system, allowing users to perform resource-related operations.</li>
+        <li><strong>Unit Testing:</strong> The page also performs unit tests by importing the <code>test</code> module, which contains tests for the vehicle management module. It checks if the tests were successful and exits with a status code of 1 if they fail.</li>
+    </ol>
+
+    <h3>Attention!</h3>
+
+    <p><strong><span style="color: red;"> *Restart the terminal everytime after you run the cell:</span></strong> To prevent the "call_sign must be unique" error, it is essential to restart the terminal before running the interactive page (<code>manage_department.ipynb</code>). This ensures a clean environment and prevents conflicts in the vehicle management module.</p>
+
+    <h2>Module 1 - <code>manager.py</code></h2>
+
+    <h3>Overview</h3>
+
+    <p>The <code>manager.py</code> module is the core of the Fires Department Resource Management package. It manages user authentication, resource registration, and provides an interactive menu for users to perform various resource-related operations.</p>
+
+    <h3>Key Features</h3>
+
+    <ul>
+        <li>User authentication and registration.</li>
+        <li>Resource registration, including complaints, memos, and action reports.</li>
+        <li>User-friendly menu for accessing functions.</li>
+    </ul>
+
+    <h2>Module 2 - <code>test.py</code></h2>
+
+    <h3>Overview</h3>
+
+    <p>The <code>test.py</code> module contains unit tests for the vehicle management module. It ensures the correctness of vehicle-related functions and properties.</p>
+
+    <h3>Key Features</h3>
+
+    <ul>
+        <li>Unit tests for vehicle properties and methods.</li>
+        <li>Ensures the integrity of the vehicle management module.</li>
+    </ul>
+
+    <h2>Module 3 - <code>vehicle.py</code></h2>
+
+    <h3>Overview</h3>
+
+    <p>The <code>vehicle.py</code> module defines the <code>Vehicle</code> class, which represents vehicles used by the fire department. It includes properties and methods for managing vehicle data.</p>
+
+    <h3>Key Features</h3>
+
+    <ul>
+        <li>Definition of the <code>Vehicle</code> class with properties for call sign, purpose, weight, fuel level, and range.</li>
+        <li>Ensures data integrity and uniqueness of call signs.</li>
+    </ul>
+
+    <h2>Module 4 - <code>vehicle_menu.py</code></h2>
+
+    <h3>Overview</h3>
+
+    <p>The <code>vehicle_menu.py</code> module provides a menu system for managing vehicles. Users can create, update, and view information about vehicles through this module.</p>
+
+    <h3>Key Features</h3>
+
+    <ul>
+        <li>Vehicle management menu.</li>
+        <li>Functions for creating, updating, and viewing vehicle information.</li>
+        <li>Data persistence through JSON files.</li>
+    </ul>
+
+    <h2>Module 5 - <code>option.py</code></h2>
+
+    <h3>Overview</h3>
+
+    <p>The <code>option.py</code> module manages menu options and provides a framework for handling user choices. It includes classes for defining menu options, safe options with logging, and report-related options.</p>
+
+    <h3>Key Features</h3>
+
+    <ul>
+        <li>Option classes for defining menu choices.</li>
+        <li>SafeOption class for secure menu options with logging.</li>
+        <li>Report and RegisteredReport classes for handling resource reports.</li>
+    </ul>
+
+    <h2>Module 6 - <code>user.py</code></h2>
+
+    <h3>Overview</h3>
+
+    <p>The <code>user.py</code> module handles user management and authentication. It defines the <code>User</code> class and <code>SecureUser</code> subclass for secure user registration and login.</p>
+
+    <h3>Key Features</h3>
+
+    <ul>
+        <li>User management and authentication.</li>
+        <li>Secure user registration with password requirements.</li>
+        <li>Secure user login and logout functionality.</li>
+    </ul>
+
+    <h2>Registered Users</h2>
+
+    <p>The following users are registered and can log in with their respective passwords. Users must login to file an Actionreport and manage vehicles</p>
+
+    <pre>
+        {
+            "amy": "Amy12345",
+            "peter": "Peter12345",
+            "kate": "Kate12345",
+            "happy": "Happy12345",
+            "john": "John12345",
+            "charlie": "Charlie12345"
+        }
+    </pre>
+
+    <h2>Existing Vehicles</h2>
+
+    <p>The following vehicles are already registered in the system:</p>
+
+    <pre>
+        [
+            {
+                "call_sign": "Command 1",
+                "purpose": "command",
+                "weight": 90.0,
+                "fuel_level": 90.0,
+                "_range": 20.0
+            },
+            {
+                "call_sign": "Engine 1",
+                "purpose": "engine",
+                "weight": 10,
+                "fuel_level": 100,
+                "_range": 200.0
+            },
+            {
+                "call_sign": "Ladder 1",
+                "purpose": "ladder",
+                "weight": 12,
+                "fuel_level": 120,
+                "_range": 200.0
+            }
+        ]
+    </pre>
+
+</body>
+</html>
