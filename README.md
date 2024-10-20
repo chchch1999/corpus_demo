@@ -7,7 +7,7 @@ This repository contains four projects, each with different focuses, ranging fro
 1. **[Basic Info of the Corpus of Taiwan Mandarin Spontaneous Speech](corpus_preview/Data%20Analysis%20of%20the%20Corpus%20of%20Taiwan%20Mandarin%20Spontaneous%20Speech.html)**: 
    An HTML preview of the analysis of Taiwan Mandarin spontaneous speech corpus.
 
-2. **[Descriptive and Inferential Statistical Analysis of Diphthong Reduction](analysis_summary/Diphthong%20Reduction%20Analysis.html)**: 
+2. **[Descriptive and Inferential Statistical Analysis of Diphthong Reduction](analysis_summary/Diphthong-Reduction-Analysis.html)**: 
    A summary of the analysis focusing on diphthong reduction in the corpus of Taiwan Mandarin spontaneous speech.
 
 3. **[OOP Project](oop_project/Fire_department.html)**: 
